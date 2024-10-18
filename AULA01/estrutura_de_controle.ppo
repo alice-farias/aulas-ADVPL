@@ -1,0 +1,22 @@
+Function U_UsandoIf()
+
+
+
+
+
+
+
+
+
+
+Do Case
+
+    Case valor == "V"
+        MsgInfo("Verdadeiro")
+    Case valor == "F"
+        MsgInfo("Falso")
+    Otherwise
+    MsgInfo("Digite uma letra valida")
+EndCase
+
+Return

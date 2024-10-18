@@ -1,0 +1,23 @@
+Function U_repeticao()
+
+Local nX := 0
+Local condicao := .T. 
+
+
+
+
+
+
+
+
+
+
+
+while condicao
+MsgInfo("Mensagem número" +cValToChar(nX))
+    if nX == 10
+    Exit
+    EndIf
+    nX++
+
+end

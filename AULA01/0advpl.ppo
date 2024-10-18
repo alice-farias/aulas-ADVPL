@@ -1,0 +1,34 @@
+
+Function U_hello()
+    MsgInfo("Hello, World!", "oi")
+
+Return
+
+
+
+Function U_logico()
+
+Local verdadeiro := .T. 
+Local falso := .F.  As  Logical
+
+Local ToFeliz := !verdadeiro
+MsgInfo(ToFeliz, "To feliz?")
+Return
+
+
+Function U_logico2()
+
+Local verdadeiro := .T. 
+Local falso := .F.  As  Logical
+
+Local ToComFome := !falso
+MsgInfo(ToComFome, "To com fome?")
+Return
+
+Function U_logico3()
+
+Local verdadeiro := .T. 
+Local falso := .F. 
+
+Local ToCansada := !falso
+MsgInfo(ToCansada, "To cansada")
