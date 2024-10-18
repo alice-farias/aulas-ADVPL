@@ -37,7 +37,16 @@
 		},
 		{
 			"label": "u_repeticao"
+		},
+		{
+			"label": "u_maiuscula"
+		},
+		{
+			"label": "u_email"
+		},
+		{
+			"label": "u_LojaMoveis"
 		}
 	],
-	"lastProgramExecuted": "u_repeticao"
+	"lastProgramExecuted": "u_LojaMoveis"
 }

@@ -1,0 +1,17 @@
+Function U_maiuscula()
+  Local cPalavra := FwInputBox("Insira seu nome")
+
+   MsgInfo(Upper(cPalavra))
+   MsgInfo(Lower(cPalavra))
+return
+
+Function U_email()
+  Local cEmail:= FwInputBox("Insira seu email")
+
+     cPesq := "@"
+     AT( cPesq)
+
+     conout( SubStr(cEmail, 1, At(cEmail,"@")) )
+
+
+return
