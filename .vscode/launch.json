@@ -46,7 +46,22 @@
 		},
 		{
 			"label": "u_LojaMoveis"
+		},
+		{
+			"label": "u_escopos"
+		},
+		{
+			"label": "U_controleAcess"
+		},
+		{
+			"label": "u_array"
+		},
+		{
+			"label": "u_totalFrutas"
+		},
+		{
+			"label": "u_listadefrutas"
 		}
 	],
-	"lastProgramExecuted": "u_LojaMoveis"
+	"lastProgramExecuted": "u_listadefrutas"
 }

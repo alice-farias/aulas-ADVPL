@@ -1,0 +1,56 @@
+#line 1 "c:/totvs/include\protheus.ch"
+#line 1 "c:/totvs/include\dialog.ch"
+#line 29 "protheus.ch"
+#line 1 "c:/totvs/include\font.ch"
+#line 30 "protheus.ch"
+#line 1 "c:/totvs/include\ptmenu.ch"
+#line 32 "protheus.ch"
+#line 1 "c:/totvs/include\print.ch"
+#line 34 "protheus.ch"
+#line 1 "c:/totvs/include\colors.ch"
+#line 36 "protheus.ch"
+#line 1 "c:/totvs/include\folder.ch"
+#line 38 "protheus.ch"
+#line 1 "c:/totvs/include\msobject.ch"
+#line 39 "protheus.ch"
+#line 1 "c:/totvs/include\vkey.ch"
+#line 43 "protheus.ch"
+#line 1 "c:/totvs/include\winapi.ch"
+#line 45 "protheus.ch"
+#line 1 "c:/totvs/include\fwcommand.ch"
+#line 48 "protheus.ch"
+#line 1 "c:/totvs/include\fwcss.ch"
+#line 51 "protheus.ch"
+#line 18 "C:\Users\CTT\AppData\Local\Temp\tds-ls.xfgfywboeh\c:/users/ctt/desktop/advpl/exemplo/aula02/desafioarray.prw"
+Function U_darray()
+    Local aFrutas := {}
+    Local cPesquisa
+    Local cFruta
+    Local cFrutas
+    Local nIndex
+    Local nX
+
+    While Len(aFrutas) < 5
+        cFruta := FwInputBox("Insira uma fruta")
+        AAdd( aFrutas, cFruta )
+    EndDo
+
+    cPesquisa := FwInputBox("Qual a fruta a pesquisar?")
+    nIndex := AScan( aFrutas, cPesquisa )
+    Iif(FindFunction("APMsgInfo"), APMsgInfo("A fruta está na posição "+cValToChar(nIndex), "Resultado"), MsgInfo("A fruta está na posição "+cValToChar(nIndex), "Resultado"))
+
+    ASort(aFrutas)
+
+    nIndex := AScan( aFrutas, { |item| item == cPesquisa } )
+    Iif(FindFunction("APMsgInfo"), APMsgInfo("A fruta está na posição "+cValToChar(nIndex), "Resultado"), MsgInfo("A fruta está na posição "+cValToChar(nIndex), "Resultado"))
+
+    cFrutas := ""
+
+    For nX:= 1 to Len( aFrutas )
+        cFrutas += aFrutas[nX] + Chr(13)+Chr(10)
+    Next
+
+    Iif(FindFunction("APMsgInfo"), APMsgInfo(cFrutas, "Frutas"), MsgInfo(cFrutas, "Frutas"))
+
+
+return
